@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5442154783375075"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBBB Tax Calculator</title>
+    <meta
+      name="description"
+      content="Single-page React tax calculator for U.S. federal income tax estimates under the One, Big, Beautiful Bill Act for 2026 and later years."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#161514",
+              paper: "#f6efe3",
+              copper: "#c46836",
+              moss: "#37594a",
+              gold: "#d6b15f",
+              blush: "#f3d4bc",
+            },
+            boxShadow: {
+              panel: "0 24px 90px rgba(22, 21, 20, 0.16)",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              body: ["Space Grotesk", "sans-serif"],
+              serif: ["Source Serif 4", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f6efe3;
+        --ink: #161514;
+        --sand: #ecd7bb;
+      }
+
+      html {
+        background:
+          radial-gradient(circle at top left, rgba(214, 177, 95, 0.2), transparent 28%),
+          radial-gradient(circle at top right, rgba(196, 104, 54, 0.15), transparent 32%),
+          linear-gradient(180deg, #f7f1e7 0%, #f2e6d5 100%);
+      }
+
+      body {
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .grid-paper {
+        background-image:
+          linear-gradient(rgba(22, 21, 20, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(22, 21, 20, 0.05) 1px, transparent 1px);
+        background-size: 28px 28px;
+      }
+
+      .glow-line {
+        background: linear-gradient(90deg, rgba(214, 177, 95, 0.15), rgba(55, 89, 74, 0.55), rgba(214, 177, 95, 0.15));
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
